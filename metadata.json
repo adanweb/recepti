@@ -1,0 +1,5 @@
+
+{
+  "name": "AI Kuharica",
+  "description": "A modern, minimalist cookbook application that provides a wide variety of recipes. It features a special function where users can input available ingredients, and the app suggests meals they can prepare using the Gemini API."
+}
