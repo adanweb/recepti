@@ -2,10 +2,10 @@
 import { GoogleGenAI } from "@google/genai";
 import { SuggestedRecipe } from "../types";
 
-const API_KEY = process.env.API_KEY;
+const API_KEY = import.meta.env.VITE_API_KEY;
 
 if (!API_KEY) {
-    console.error("API key for Gemini is not set. Please set the process.env.API_KEY environment variable.");
+    console.error("API key for Gemini is not set. Please set the import.meta.env.VITE_API_KEY environment variable.");
 }
 
 const ai = new GoogleGenAI({ apiKey: API_KEY! });
